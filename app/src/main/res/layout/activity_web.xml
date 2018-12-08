@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Web_study.WebAcivity"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <EditText
+            android:id="@+id/et_address"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:text="http://www.baidu.com" />
+
+        <Button
+            android:id="@+id/search"
+            android:layout_width="101dp"
+            android:layout_height="match_parent"
+            android:onClick="click"
+            android:text="Search" />
+    </LinearLayout>
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+        <TextView
+            android:text="网页标题为:"
+            android:layout_width="100dp"
+            android:layout_height="30dp" />
+        <TextView
+            android:id="@+id/url_title"
+            android:maxLines="1"
+            android:ellipsize="end"
+            android:layout_width="match_parent"
+            android:layout_height="30dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+        <TextView
+            android:text="图标为:"
+            android:layout_marginTop="10dp"
+            android:layout_width="100dp"
+            android:layout_height="30dp"
+            />
+
+        <ImageView
+            android:id="@+id/urt_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" />
+
+    </LinearLayout>
+
+    <ProgressBar
+        android:id="@+id/prog"
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:max="100"
+        style="?android:attr/progressBarStyleHorizontal"/>
+
+    <com.tencent.smtt.sdk.WebView
+        android:id="@+id/myWebView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none">
+    </com.tencent.smtt.sdk.WebView>
+
+
+</LinearLayout>

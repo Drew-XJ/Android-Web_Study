@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+
+        <Button
+            android:id="@+id/Dom_deal"
+            android:text="Dom解析xml"
+            android:textAllCaps="false"
+            android:layout_width="120dp"
+            android:layout_marginTop="10dp"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:id="@+id/Sax_deal"
+            android:textAllCaps="false"
+            android:text="Sax解析xml"
+            android:layout_width="120dp"
+            android:layout_marginTop="10dp"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:id="@+id/Pull_deal"
+            android:textAllCaps="false"
+            android:text="Pull解析xml"
+            android:layout_width="120dp"
+            android:layout_marginTop="10dp"
+            android:layout_height="wrap_content" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+        <Button
+            android:id="@+id/Json_deal"
+            android:textAllCaps="false"
+            android:text="解析Json数据"
+            android:layout_width="120dp"
+            android:layout_marginTop="10dp"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:id="@+id/Get_picture"
+            android:textAllCaps="false"
+            android:text="显示指定图片"
+            android:layout_width="120dp"
+            android:layout_marginTop="10dp"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:id="@+id/Get_apk"
+            android:textAllCaps="false"
+            android:text="获取指定apk"
+            android:layout_width="120dp"
+            android:layout_marginTop="10dp"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <com.example.experiment5.Post_study.MyImageView
+        android:id="@+id/ImageGeted"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:layout_marginTop="50dp"
+        />
+
+    <!--<LinearLayout-->
+        <!--android:layout_marginTop="10dp"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:orientation="horizontal">-->
+        <!--<TextView-->
+
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:text="APK下载进度:"-->
+            <!--android:textColor="@android:color/black"-->
+            <!--/>-->
+        <!--<TextView-->
+            <!--android:id="@+id/tv"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:textColor="@android:color/black"-->
+            <!--/>-->
+    <!--</LinearLayout>-->
+
+
+    <!--<ProgressBar-->
+        <!--android:id="@+id/progressBar"-->
+        <!--style="?android:attr/progressBarStyleHorizontal"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:max="100" />-->
+
+</LinearLayout>
